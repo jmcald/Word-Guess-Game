@@ -1,0 +1,24 @@
+body {
+    background: url("../images/bg-image.jpg");
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.bg-cloudy {
+    background: rgba(143, 112, 99, 0.295);
+}
+
+.brdr {
+    border-style: double;
+    border-width: 1rem;
+}
+h1 {
+    font-family: 'Sonsie One', cursive;
+    font-size: 3rem;
+    color: #73992d;
+}
+
+h4 {
+    padding: 2rem;
+}
