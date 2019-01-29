@@ -1,57 +1,57 @@
 var countryGuessGame ={
     listObject: {
-        Afghanistan:{
+        afghanistan:{
             flag: "afg-flg.png"
         },
-        Austria: {
+        austria: {
             flag: "aus-flg.png"
         },
-        Belgium: {
+        belgium: {
             flag: "bel-flg.png"
         },
-        Canada: {
+        canada: {
             flag: "can-flg.png"
         },
-        France: {
+        france: {
             flag: "fra-flg.png"
         },
-        Germany: {
+        germany: {
             flag: "ger-flg.png"
         },
-        Haiti: {
+        haiti: {
             flag: "hai-flg.png"
         },
-        India: {
+        india: {
             flag: "ind-flg.png"
         },
-        Japan: {
+        japan: {
             flag: "jap-flg.png"
         },
-        Kenya: {
+        kenya: {
             flag: "ken-flg.png"
         },
-        Lebanon: {
+        lebanon: {
             flag: "leb-flg.jpg"
         },
-        Netherlands: {
+        netherlands: {
             flag: "net-flg.png"
         },
-        Poland: {
+        poland: {
             flag: "pol-flg.png"
         },
-        Russia: {
+        russia: {
             flag: "rus-flg.png"
         },
-        Spain: {
+        spain: {
             flag: "spa-flg.png"
         },
-        Sweden: {
+        sweden: {
             flag: "swe-flg.png"
         },
-        Turkey: {
+        turkey: {
             flag: "tur-flg.png"
         },
-        Zimbabwe: {
+        zimbabwe: {
             flag: "zim-flg.png"
         }
     },
@@ -117,7 +117,7 @@ var countryGuessGame ={
                 wordView+= "&nbsp;_&nbsp;";
             }
         }
-        document.querySelector("#myst-country").innerHTML = wordView;
+        document.querySelector("#current-word").innerHTML = wordView;
     },
     restartGame: function() {
         document.querySelector("#wrong-guess").innerHTML = "";
@@ -128,7 +128,7 @@ var countryGuessGame ={
         this.guessesLeft = 0;
         this.totalGuesses = 0;
         this.letterGuessed = null;
-        this.setupGame();
+        this.initializeGame();
         this.rebuildWordView();
     },
     updateWins: function() {
@@ -154,7 +154,7 @@ var countryGuessGame ={
     }
 };
 
-countryGuessGame.setupGame();
+countryGuessGame.initializeGame();
 
 document.onkeyup = function(event) {
     countryGuessGame.letterGuessed = String.fromCharCode(event.which).toLowerCase();
