@@ -11,7 +11,7 @@ body {
 
 .brdr {
     border-style: double;
-    border-width: 1rem;
+    border-width: 1.5rem;
 }
 h1 {
     font-family: 'Sonsie One', cursive;
@@ -21,4 +21,12 @@ h1 {
 
 h4 {
     padding: 2rem;
+}
+
+.invis {
+    visibility: hidden;
+}
+
+.underL {
+    text-decoration: underline;
 }
